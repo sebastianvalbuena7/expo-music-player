@@ -1,26 +1,35 @@
 {
   "expo": {
-    "name": "music-player-app",
-    "slug": "music-player-app",
+    "name": "music-player",
+    "slug": "music-player",
     "version": "1.0.0",
     "orientation": "portrait",
-    "scheme": "music-player",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
+    "scheme": "music-player",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#000000"
+      "backgroundColor": "#000"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.music.player",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "android": {
-      "package": "com.musicplayer.musicplayer",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000000"
-      }
+        "backgroundColor": "#000"
+      },
+      "package": "com.music.player"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -29,8 +38,8 @@
       "expo-router"
     ],
     "experiments": {
-			"typedRoutes": true,
-			"tsconfigPaths": true
-		}
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    }
   }
 }
