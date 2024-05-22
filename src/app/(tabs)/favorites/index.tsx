@@ -1,10 +1,10 @@
 import { defaultStyles } from "@/styles"
-import { Text, View } from "react-native"
+import { View } from "react-native"
 
 const FavoritesScreen = () => {
     return (
         <View style={defaultStyles.container}>
-            
+
         </View>
     )
 }

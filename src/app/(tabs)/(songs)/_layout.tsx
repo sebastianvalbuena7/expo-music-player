@@ -12,9 +12,9 @@ const SongsScreensLayout = () => {
                     options={{
                         ...StackScreenWithSearchBar,
                         headerTitle: 'Songs',
-                        contentStyle: {
-                            marginTop: 10
-                        }
+                        // contentStyle: {
+                        //     marginTop: 10
+                        // }
                     }}
                 />
             </Stack>
